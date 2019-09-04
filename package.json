@@ -1,0 +1,28 @@
+{
+  "name": "app.mor.com.br",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Nioox/app.mor.com.br.git",
+  "author": "Nicolas <suporte@morinfo.com.br>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "sucrase-node src/server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.17.1",
+    "mysql2": "^1.7.0",
+    "sequelize": "^5.17.1",
+    "yup": "^0.27.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1",
+    "sequelize-cli": "^5.5.0",
+    "sucrase": "^3.10.1"
+  }
+}
