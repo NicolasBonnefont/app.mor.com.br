@@ -24,6 +24,12 @@ class ImportacaoController {
       });
 
     }
+    const pkExiste = await importacao.findOne({where: {CodOperacao:req.body.CodOperacao}});
+
+    if (pkExiste) {
+      return res.status(400).json({erro: 'CodOperacao ja existe'});
+    }
+
 
     const {
       NumLancto,
