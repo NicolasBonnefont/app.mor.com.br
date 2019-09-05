@@ -1,20 +1,18 @@
 import { Router } from'express';
 
-import UserController from './app/controllers/UserController';
-import SessionController from './app/controllers/SessionController';
-import authMiddleware from './app/middlewares/auth';
-const bodyParser = require('body-parser');
+import ImportacaoController from './app/controllers/ImportacaoController';
+
+
+
 const routes = new Router();
-routes.use(bodyParser.json());
-routes.use(bodyParser.urlencoded({ extended: true }));
 
 
-routes.post('/users', UserController.store);
-routes.post('/sessions', SessionController.store);
-routes.use(authMiddleware);
+
+routes.post('/importacao', ImportacaoController.store);
+
+routes.get('/importacao',ImportacaoController.get);
 
 
-routes.put('/users', UserController.update);
 
 
 
