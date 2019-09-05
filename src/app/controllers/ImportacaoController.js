@@ -18,6 +18,8 @@ class ImportacaoController {
 
     });
 
+      // Validacao do campos com  .required()
+
     if (!(await schema.isValid(req.body))) {
       return res.status(400).json({
         erro: 'Campos Invalidos !'
@@ -30,7 +32,7 @@ class ImportacaoController {
       return res.status(400).json({erro: 'NumeroOP ja existe'});
     }
 
-
+    // Jogar no Return Apenas oque eu passar no const {}
     const {
       NumLancto,
       NumeroOP,
@@ -38,6 +40,8 @@ class ImportacaoController {
       DescricaoOperacao,
       CodProduto
     } = await importacao.create(req.body);
+
+    // Neste caso, estou retornando tudo
 
     return res.json({
       Mensagem: 'Dados salvos'
