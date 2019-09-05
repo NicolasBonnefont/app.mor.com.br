@@ -17,7 +17,7 @@ class importacao extends Model {
       DataPlanejadaInicio: Sequelize.DATE,
       HoraPlanejadaInicio: Sequelize.STRING,
       DataPlanejadaFim: Sequelize.DATE,
-      HoraPlanejadaFim: Sequelize.DATE,
+      HoraPlanejadaFim: Sequelize.STRING,
       Qtde: Sequelize.DOUBLE,
       QtdePecasCiclo: Sequelize.DOUBLE,
       TempoCicloPrevisto: Sequelize.INTEGER,

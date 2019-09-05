@@ -1,7 +1,6 @@
 import * as Yup from 'yup';
 import importacao from '../models/importacao'
 
-
 class ImportacaoController {
 
   async store(req, res) {
