@@ -6,7 +6,7 @@ module.exports = {
   database: 'apontaproducao',
   dialect: 'mysql',
   define: {
-    timestamps: false,
+    timestamps: true,
     underscored: false,
     underscoredAll: false
 
