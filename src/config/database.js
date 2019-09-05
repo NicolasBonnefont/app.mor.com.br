@@ -5,7 +5,7 @@ module.exports = {
   password: 'numsey1008',
   database: 'apontaproducao',
   dialect: 'mysql',
-  timezone: '-03:00',
+  timezone: 'Brasil/SaoPaulo',
   define: {
     timestamps: true,
     underscored: false,
