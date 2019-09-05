@@ -61,9 +61,9 @@ class ImportacaoController {
 
 
   async get(req, res) {
-    const tudo = await importacao.findAll(req.body);
+    const data = await importacao.findAll(req.body);
 
-    return res.json(tudo);
+    return res.json({data});
   }
 
 }
