@@ -14,7 +14,18 @@ class ImportacaoController {
       CodProduto: Yup.string(),
       Referencia: Yup.string(),
       DescricaoProduto: Yup.string(),
-      CodMaquina: Yup.number().integer()
+      CodMaquina: Yup.number().integer(),
+      DataPlanejadaInicio: Yup.string(),
+      HoraPlanejadaInicio:Yup.string(),
+      DataPlanejadaFim: Yup.string(),
+      HoraPlanejadaFim: Yup.string(),
+      Qtde:Yup.number().integer(),
+      QtdePecasCiclo:Yup.number().integer(),
+      TempoCicloPrevist:Yup.number().integer(),
+      TempoSetupPrevisto: Yup.number().integer(),
+      Acao:Yup.number().integer(),
+      Status: Yup.number().integer(),
+      DataHoraLancto: Yup.string(),
 
     });
 
