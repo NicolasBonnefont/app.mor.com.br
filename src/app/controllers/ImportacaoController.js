@@ -24,10 +24,10 @@ class ImportacaoController {
       });
 
     }
-    const pkExiste = await importacao.findOne({where: {CodOperacao:req.body.CodOperacao}});
+    const pkExiste = await importacao.findOne({where: {NumeroOP:req.body.NumeroOP}});
 
     if (pkExiste) {
-      return res.status(400).json({erro: 'CodOperacao ja existe'});
+      return res.status(400).json({erro: 'NumeroOP ja existe'});
     }
 
 
